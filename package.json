@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
-    "scully:serve": "scully serve"
+    "scully:serve": "scully serve",
+    "scully:deploy": "ng build && scully serve"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +25,7 @@
     "@scullyio/init": "^0.0.23",
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
+    "clean-css": "4.1.11",
     "papercss": "^1.6.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
