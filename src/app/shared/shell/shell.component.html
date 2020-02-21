@@ -1,0 +1,181 @@
+<div id='top' class='row site'>
+  <div class='sm-12 md-8 col'>
+    <div class='paper'>
+      <div class='demo-title'>
+        <div class='row flex-center'>
+          <div class='text-center'>
+            <h1>Tech BloGui</h1>
+            <h3>conteúdos mais curtidos</h3>
+          </div>
+        </div>
+
+        <div class="row flex-center child-borders">
+          <a class='paper-btn margin' href='/'>Get PaperCSS</a>
+          <a class='paper-btn margin current' href='/docs/'>Documentation</a>
+          <a class='paper-btn margin' href='/about/'>About</a>
+
+          <a href="https://github.com/rhyneav/papercss" target="_blank" class="paper-btn margin">Github</a>
+        </div>
+
+      </div>
+      <div class="to-top">
+        <a href="#top" class="paper-btn margin">^</a>
+      </div>
+
+      <!-- Conteúdo -->
+      <ng-content></ng-content>
+      <!-- /Conteúdo -->
+
+    </div>
+  </div>
+  <div class='sm-12 md-4 col sidebar'>
+
+    <div class='paper'>
+      <h3 class='sidebar-title' style='text-align:center'>
+        <a href='/docs'>Posts</a>
+      </h3>
+      <div class='row'>
+
+        <div class='collapsible full-width'>
+          <input id='collapsible-components' type='radio' name='collapsible'>
+          <label for="collapsible-components">PWA</label>
+          <div class="collapsible-body">
+            <ul>
+
+              <li *ngFor="let page of links$ | async">
+                <a [routerLink]="page.route">{{ page.route }}</a>
+              </li>
+
+              <!-- <li>
+                <a href='/docs/components/alerts/'>Alerts</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/articles/'>Articles</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/badges/'>Badges</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/buttons/'>Buttons</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/cards/'>Cards</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/collapsible/'>Collapsibles</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/forms/'>Forms</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/modals/'>Modals</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/navbar/'>Navbar</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/popovers/'>Popovers</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/progress/'>Progress</a>
+              </li>
+
+              <li>
+                <a href='/docs/components/tabs/'>Tabs</a>
+              </li> -->
+
+            </ul>
+          </div>
+        </div>
+
+        <div class='collapsible full-width'>
+          <input id='collapsible-content' type='radio' name='collapsible'>
+          <label for="collapsible-content">Content</label>
+          <div class="collapsible-body">
+            <ul>
+
+              <li>
+                <a href='/docs/content/code/'>Code</a>
+              </li>
+
+              <li>
+                <a href='/docs/content/images/'>Images</a>
+              </li>
+
+              <li>
+                <a href='/docs/content/lists/'>Lists</a>
+              </li>
+
+              <li>
+                <a href='/docs/content/tables/'>Tables</a>
+              </li>
+
+              <li>
+                <a href='/docs/content/typography/'>Typography</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class='collapsible full-width'>
+          <input id='collapsible-layout' type='radio' name='collapsible'>
+          <label for="collapsible-layout">Layout</label>
+          <div class="collapsible-body">
+            <ul>
+
+              <li>
+                <a href='/docs/layout/flexbox/'>Flexbox</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class='collapsible full-width'>
+          <input id='collapsible-utilities' type='radio' name='collapsible'>
+          <label for="collapsible-utilities">Utilities</label>
+          <div class="collapsible-body">
+            <ul>
+
+              <li>
+                <a href='/docs/utilities/borders/'>Borders &amp; Shadows</a>
+              </li>
+
+              <li>
+                <a href='/docs/utilities/colors/'>Colors</a>
+              </li>
+
+              <li>
+                <a href='/docs/utilities/spacing/'>Spacing</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class='paper'>
+      <div class="row flex-center">
+        <p>
+          Escrito com 💛 por <a href="https://guiseek.web.app" target="_blank">Gui Seek</a> e mais alguns
+          <a href="https://github.com/guiseek/jam-paper-notes/graphs/contributors">fantásticos colaboradores</a>!
+          Que me apoiam na decisão de novos conteúdos.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
