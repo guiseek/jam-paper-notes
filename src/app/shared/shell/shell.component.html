@@ -43,7 +43,7 @@
             <ul>
 
               <li *ngFor="let page of links$ | async">
-                <a [routerLink]="page.route">{{ page.route }}</a>
+                <a [routerLink]="page.route">{{ page.title }}</a>
               </li>
 
               <!-- <li>
