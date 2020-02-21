@@ -37,10 +37,38 @@ img.no-responsive {
 .demo-title:hover + .to-top {
   opacity: 0;
 }
+.demo-title h1 {
+  margin: .5rem 1rem;
+}
+.demo-title h3 {
+  margin: .5rem 1rem;
+}
+.demo-title .logo {
+  color: inherit;
+  border: unset;
+  background: none;
+  width: 128px;
+}
+.sidebar .paper {
+  background-image: url("/assets/uig-watermark.svg");
+  background-position: 10px 10px;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    top: 10px;
+    left: 10px;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    filter: blur(10px);
+  }
+}
 .sidebar-title a {
   color: inherit;
   background: none;
 }
+
 .collapsible.full-width {
   width: 100%;
 }
